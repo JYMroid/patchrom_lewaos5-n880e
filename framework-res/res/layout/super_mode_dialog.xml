@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:paddingLeft="3.0dip" android:paddingTop="9.0dip" android:paddingRight="1.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/message" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/textAppearanceMedium" />
+    <CheckBox android:id="@id/remember_or_not" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remember_my_choice" />
+    <TextView android:id="@id/tips" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/low_battery_dialog_tips" style="?android:attr/textAppearanceSmall" />
+</LinearLayout>

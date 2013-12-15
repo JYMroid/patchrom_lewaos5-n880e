@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="dialpad_layout_weight_digits">20</integer>
+    <integer name="dialpad_layout_weight_dialpad">65</integer>
+    <integer name="dialpad_layout_weight_additional_buttons">15</integer>
+</resources>

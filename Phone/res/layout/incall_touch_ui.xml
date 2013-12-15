@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.InCallTouchUi android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android">
+    <RelativeLayout android:id="@id/inCallControls" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/dtmf_twelve_key_dialer_stub" android:layout="@layout/dtmf_twelve_key_dialer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dialpad_vertical_margin" android:layout_above="@id/bottomButtons" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bottomButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ViewStub android:id="@id/extraButtonRow" android:layout="@layout/extra_button_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageButton android:id="@id/endButton" android:background="@drawable/end_call_background" android:layout_width="fill_parent" android:src="@drawable/ic_dial_end_call" android:contentDescription="@string/onscreenEndCallText" style="@style/InCallEndButton" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/dialpad_background" android:paddingLeft="@dimen/button_cluster_side_padding" android:paddingRight="@dimen/button_cluster_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/VerticalSeparator" />
+                <ToggleButton android:id="@id/dialpadButton" android:background="@drawable/btn_compound_dialpad" android:contentDescription="@string/onscreenShowDialpadText" style="@style/InCallCompoundButton" />
+                <View style="@style/VerticalSeparator" />
+                <ToggleButton android:id="@id/audioButton" android:background="@drawable/btn_compound_audio" android:contentDescription="@string/onscreenAudioText" style="@style/InCallCompoundButton" />
+                <View style="@style/VerticalSeparator" />
+                <ToggleButton android:id="@id/muteButton" android:background="@drawable/btn_compound_mute" android:contentDescription="@string/onscreenMuteText" style="@style/InCallCompoundButton" />
+                <View style="@style/VerticalSeparator" />
+                <ToggleButton android:id="@id/holdButton" android:background="@drawable/btn_compound_hold" android:contentDescription="@string/onscreenHoldText" style="@style/InCallCompoundButton" />
+                <ImageButton android:id="@id/swapButton" android:src="@drawable/ic_incall_switch_holo_dark" android:contentDescription="@string/onscreenSwapCallsText" style="@style/InCallButton" />
+                <View android:id="@id/holdSwapSpacer" style="@style/VerticalSeparator" />
+                <ImageButton android:id="@id/addButton" android:src="@drawable/ic_add_contact_holo_dark" android:contentDescription="@string/onscreenAddCallText" style="@style/InCallButton" />
+                <ImageButton android:id="@id/mergeButton" android:src="@drawable/ic_merge_holo_dark" android:contentDescription="@string/onscreenMergeCallsText" style="@style/InCallButton" />
+                <View style="@style/VerticalSeparator" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.android.internal.widget.multiwaveview.GlowPadView android:gravity="top" android:layout_gravity="bottom|center" android:id="@id/incomingCallWidget" android:background="@*android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="-46.0dip" prvandroid:innerRadius="@lewa:dimen/android_glowpadview_inner_radius" prvandroid:targetDescriptions="@array/incoming_call_widget_3way_target_descriptions" prvandroid:directionDescriptions="@array/incoming_call_widget_3way_direction_descriptions" prvandroid:outerRingDrawable="@lewa:drawable/android_ic_lockscreen_outerring" prvandroid:pointDrawable="@lewa:drawable/android_ic_lockscreen_glowdot" prvandroid:glowRadius="@lewa:dimen/android_glowpadview_glow_radius" prvandroid:targetDrawables="@array/incoming_call_widget_3way_targets" prvandroid:handleDrawable="@drawable/ic_in_call_touch_handle" prvandroid:outerRadius="@dimen/glowpadview_target_placement_radius" prvandroid:vibrationDuration="20" prvandroid:snapMargin="@dimen/glowpadview_snap_margin" prvandroid:feedbackCount="1" />
+</com.android.phone.InCallTouchUi>

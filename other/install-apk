@@ -1,0 +1,12 @@
+#!/system/bin/sh
+# 新建/sdcard/hundan/
+# 把apk放进去，运行此脚本
+# apk不能有中文。
+
+APKLIST=`ls /sdcard/hundan/*.apk`
+for INFILES in $APKLIST
+do
+  echo  setup package:$INFILES
+  pm install -r $INFILES
+done
+

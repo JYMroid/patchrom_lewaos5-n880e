@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/callmark1" android:paddingLeft="24.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/call_slot1" android:layout_weight="1.0" android:soundEffectsEnabled="true" style="?android:attr/borderlessButtonStyle" />
+    <View android:background="#ff505050" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+    <Button android:id="@id/callmark2" android:paddingLeft="24.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/call_slot2" android:layout_weight="1.0" android:soundEffectsEnabled="true" style="?android:attr/borderlessButtonStyle" />
+</LinearLayout>

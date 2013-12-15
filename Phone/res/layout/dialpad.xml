@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_gravity="center_horizontal" android:id="@id/dialpad" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="@integer/dialpad_layout_weight_dialpad"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0">
+        <ImageButton android:id="@id/one" android:background="@drawable/dial_num_1" android:contentDescription="@string/description_image_button_one" style="@style/DialpadButtonStyle_num1" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+        <ImageButton android:id="@id/two" android:background="@drawable/dial_num_2" android:contentDescription="@string/description_image_button_two" style="@style/DialpadButtonStyle" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+        <ImageButton android:id="@id/three" android:background="@drawable/dial_num_3" android:contentDescription="@string/description_image_button_three" style="@style/DialpadButtonStyle_num3" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+    </TableRow>
+    <View android:background="@color/dial_num_color_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0">
+        <ImageButton android:id="@id/four" android:background="@drawable/dial_num_4" android:contentDescription="@string/description_image_button_four" style="@style/DialpadButtonStyle" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/five" android:background="@drawable/dial_num_5" android:contentDescription="@string/description_image_button_five" style="@style/DialpadButtonStyle" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/six" android:background="@drawable/dial_num_6" android:contentDescription="@string/description_image_button_six" style="@style/DialpadButtonStyle" />
+    </TableRow>
+    <View android:background="@color/dial_num_color_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0">
+        <ImageButton android:id="@id/seven" android:background="@drawable/dial_num_7" android:contentDescription="@string/description_image_button_seven" style="@style/DialpadButtonStyle" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/eight" android:background="@drawable/dial_num_8" android:contentDescription="@string/description_image_button_eight" style="@style/DialpadButtonStyle" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/nine" android:background="@drawable/dial_num_9" android:contentDescription="@string/description_image_button_nine" style="@style/DialpadButtonStyle" />
+    </TableRow>
+    <View android:background="@color/dial_num_color_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0">
+        <ImageButton android:id="@id/star" android:background="@drawable/dial_num_star" android:contentDescription="@string/description_image_button_star" style="@style/DialpadButtonStyle_star" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginBottom="8.0dip" />
+        <ImageButton android:id="@id/zero" android:background="@drawable/dial_num_0" android:contentDescription="@string/description_image_button_zero" style="@style/DialpadButtonStyle" />
+        <View android:background="@color/dial_num_color_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginBottom="8.0dip" />
+        <ImageButton android:id="@id/pound" android:background="@drawable/dial_num_pound" android:contentDescription="@string/description_image_button_pound" style="@style/DialpadButtonStyle_pound" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/incall_screen" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/incall_screen_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <RelativeLayout android:id="@id/inCallPanel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.phone.LewaCallCard android:id="@id/callCard" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.android.phone.LewaInCallTouchUi android:id="@id/inCallTouchUi" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/otaCallCardStub" android:layout="@layout/otacall_card" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/manageConferencePanelStub" android:layout="@layout/manage_conference_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/dtmf_twelve_key_dialer_stub" android:layout="@layout/dtmf_twelve_key_dialer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dialpad_vertical_margin_dtmf" />
+</FrameLayout>

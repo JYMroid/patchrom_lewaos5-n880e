@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_togglebutton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/record_tip" android:background="@drawable/toast_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recording" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/more_tablayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/incall_touch_control_height">
+        <ToggleButton android:id="@id/contacts_button" android:background="@null" android:textOn="@string/contactsIconLabel" android:textOff="@string/contactsIconLabel" android:drawableTop="@drawable/btn_compound_contact" android:contentDescription="@string/contactsIconLabel" style="@style/InCallButton2" />
+        <ToggleButton android:id="@id/holdButton" android:background="@null" android:textOn="@string/onscreenHoldText" android:textOff="@string/onscreenHoldText" android:drawableTop="@drawable/btn_compound_hold" android:contentDescription="@string/onscreenHoldText" style="@style/InCallButton2" />
+        <ToggleButton android:id="@id/swapButton" android:background="@null" android:textOn="@string/onscreenSwapCallsText" android:textOff="@string/onscreenSwapCallsText" android:drawableTop="@drawable/btn_compound_switch_call" android:contentDescription="@string/onscreenSwapCallsText" style="@style/InCallButton2" />
+        <ToggleButton android:id="@id/addButton" android:background="@null" android:textOn="@string/onscreenAddCallText" android:textOff="@string/onscreenAddCallText" android:drawableTop="@drawable/btn_compound_addcall" android:contentDescription="@string/onscreenAddCallText" style="@style/InCallButton2" />
+        <ToggleButton android:id="@id/mergeButton" android:background="@null" android:textOn="@string/onscreenMergeCallsText" android:textOff="@string/onscreenMergeCallsText" android:drawableTop="@drawable/btn_compound_merge_call" android:contentDescription="@string/onscreenMergeCallsText" style="@style/InCallButton2" />
+    </LinearLayout>
+</LinearLayout>

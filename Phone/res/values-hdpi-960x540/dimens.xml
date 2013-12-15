@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="incoming_widget_target_placement_radius">124.0dip</dimen>
+    <dimen name="call_card_smart_photo_circle_anim_x">180.0dip</dimen>
+    <dimen name="in_call_incoming_call_photo_height">463.0dip</dimen>
+</resources>

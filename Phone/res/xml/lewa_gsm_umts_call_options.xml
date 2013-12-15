@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/labelGSMMore"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceScreen android:persistent="false" android:title="@string/labelCF" android:key="button_cf_expand_key" android:summary="@string/call_forwarding_settings">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.GsmUmtsCallForwardOptions" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/fdn" android:key="button_fdn_key" android:summary="@string/sum_fdn">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.FdnSetting2" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/lable_call_barring" android:key="button_cb_expand_key" android:summary="@string/call_barring_sum">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.mediatek.settings.CallBarring" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/video_call" android:key="button_vedio_call_key" android:summary="@string/sum_video_call" />
+    <PreferenceScreen android:persistent="false" android:title="@string/voice_mail" android:key="button_voicemail_key" android:summary="@string/sum_voice_mail">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.VoiceMailSetting" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/additional_gsm_call_settings" android:key="button_more_expand_key" android:summary="@string/call_additional_sum">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.GsmUmtsAdditionalCallOptions" />
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/voice_call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceCategory android:title="@string/audio_sound_title" android:key="pref_advanced_settings">
+        <com.lewa.settings.DefaultRingtonePreference android:persistent="false" android:title="@string/voice_call_ringtone_setting_title" android:key="phone_ringtone" android:widgetLayout="@null" />
+        <SwitchPreference android:persistent="false" android:title="@string/vibrate_ringing" android:key="button_vibrate_ringing" />
+        <SwitchPreference android:persistent="false" android:title="@string/vibrate_outgoing" android:key="button_vibrate_outgoing" />
+        <ListPreference android:entries="@array/dialpad_tone_types" android:title="@string/dialpad_tone_title" android:key="dialpad_tone" android:summary="@string/dialpad_tone_default_summary" android:widgetLayout="@null" android:dialogTitle="@string/dialpad_tone_dlg_title" android:entryValues="@array/dialpad_tone_type_values" />
+        <SwitchPreference android:persistent="false" android:title="@string/incoming_call_silent" android:key="button_incoming_call_silent" />
+        <SwitchPreference android:title="@string/dual_mic_title" android:key="dual_mic_key" android:defaultValue="true" android:summaryOn="@string/dual_mic_turnoff" android:summaryOff="@string/dual_mic_turnon" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/call_settings" android:key="button_misc_category_key" />
+    <SwitchPreference android:title="@string/yellowpage_title" android:key="yellow_page_cfg_key" android:defaultValue="true" android:summaryOn="@string/yellowpage_summary" android:summaryOff="@string/yellowpage_summary" />
+    <SwitchPreference android:title="@string/minutereminder_title" android:key="minute_reminder_key" android:defaultValue="false" android:summaryOn="@string/minutereminder_turnoff" android:summaryOff="@string/minutereminder_turnon" />
+    <SwitchPreference android:persistent="false" android:title="@string/screen_awake" android:key="button_screen_awake" android:summary="@string/screen_awake_sum" />
+    <PreferenceScreen android:persistent="false" android:title="@string/ip_prefix_setting" android:key="button_ip_prefix_key" android:summary="@string/ip_prefix_setting_sum">
+        <intent android:targetPackage="com.lewa.PIM" android:action="android.intent.action.MAIN" android:targetClass="com.lewa.PIM.settings.IpCallSettingsActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>
