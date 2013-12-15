@@ -1,0 +1,3 @@
+post-build=qcom/n880e/n880e:4.1.2/JRO03L/N880E_R_2.2.33.116:userdebug/release-keys
+post-timestamp=1375439795
+pre-device=n880e
